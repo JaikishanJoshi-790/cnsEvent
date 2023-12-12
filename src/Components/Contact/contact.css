@@ -1,0 +1,117 @@
+.contact{
+    min-height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+}
+.contact-form input{
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 3px 8px;
+    font-size: 20px;
+    background: #cdcdcd;
+}
+.contact-form textarea{
+    font-size: 20px;
+    padding: 10px;
+    background: #cdcbcb;
+}
+.contact-container{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    width: 80%;
+}
+.contact-text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-text h1{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-weight: 400;
+    width: fit-content;
+}
+.contact-text hr{
+    height: 6px;
+    border-radius: 10px;
+    background-color: black;
+}
+.contact-form .btn{
+    width: 120px;
+    height: 40px;
+    background-color: #0E7CC2;
+    color: white;
+    align-self: center;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: large;
+    font-weight: bold;
+}
+.contact-form .btn:hover{
+    background-color: #669AD3;
+    color: whitesmoke;
+}
+.contact-address{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 20px;
+    font-family: 'Tiro Devanagari Hindi', serif;
+}
+.contact-address h2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 200; 
+}
+
+@media only screen and (max-width: 450px){
+    .contact{
+        min-height: 100vh;
+        height: fit-content;
+    }
+    .contact-form{
+        flex-direction: column;
+        gap: 10px;
+        width: 90%;
+    }
+    .contact-form input{
+        font-size: 15px;
+        height: 35px;
+    }
+    .contact-form textarea{
+        font-size: 15px;
+    }
+    .contact-container{
+        flex-direction: column;
+        gap: 60px;
+    }
+    .contact-text{
+        width: 80%;
+    }
+    .contact-text h1{
+        width: 200px;
+        font-size: 30px;
+    }
+    .contact-address{
+        width: 90%;
+    }
+}
