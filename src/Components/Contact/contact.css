@@ -114,4 +114,7 @@
     .contact-address{
         width: 90%;
     }
+    .contact-form .btn{
+        margin-bottom: 30px;
+    }
 }

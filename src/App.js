@@ -1,20 +1,25 @@
 import React from 'react';
 import "./App.css"
-import Navbar from './Components/Navbar/Navbar';
-import Hero from './Components/Hero/Hero';
-import Services from './Components/Services/Services';
-import Gallery from './Components/Gallery/Gallery';
-import Contact from './Components/Contact/Contact';
+import { BrowserRouter,Route,Routes } from 'react-router-dom';
+import Catering from './Components/photoSection/Catering';
+import { CateringImages } from './Components/Gallery/SliderData';
+import { LightDecoImages } from './Components/Gallery/SliderData';
+import All from './all';
 
 const App = () => {
   return (
     <>
-      <section><Navbar/></section>
-      <section id='Home'><Hero/></section>
-      <section id='Services'><Services/></section>
-      <section id='Gallery'><Gallery/></section>
-      <section id='Contact'><Contact/></section>
-      
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<All/>}/>
+        <Route path='/catering' element={<Catering title="Catering" data={CateringImages}/>}/>
+        <Route path='/sandf' element={<Catering title="Sound & Floor"  data={LightDecoImages}/>}/>
+        <Route path='/flowerdeco' element={<Catering title="Flower Decoration"  data={LightDecoImages}/>}/>
+        <Route path='/stagedeco' element={<Catering title="Stage Decoration"  data={LightDecoImages}/>}/>
+        <Route path='/tentdeco' element={<Catering title="Tent Decoration"  data={LightDecoImages}/>}/>
+        <Route path='/lightdeco' element={<Catering title="Light Decoration"  data={LightDecoImages}/>}/>
+      </Routes>
+      </BrowserRouter>
     </>
   );
 }

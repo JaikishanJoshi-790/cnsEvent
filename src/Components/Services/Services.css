@@ -52,10 +52,16 @@
     transition-duration: 0.3;
 }
 .service-title{
-    padding-top: 10px;
-    text-align: center;
-    font-size: large;
-    font-weight: 400;
+    padding-top: 15px;
+}
+.service-title a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    gap: 6px;
+    color: inherit;
+    font-size: larger;
 }
 .ourServices{
     margin-top: 80px;
