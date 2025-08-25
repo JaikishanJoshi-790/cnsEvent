@@ -21,80 +21,175 @@ import stageDeco_2 from '../../Assets/images/stage_decoration_3.jpg'
 import stageDeco_3 from '../../Assets/images/stage_decoration_4.jpg'
 import stageDeco_4 from '../../Assets/images/stage_decoration_5.jpg'
 import stageDeco_5 from '../../Assets/images/stage_decoration_6.jpg'
+import flowerDeco from '../../Assets/images/flower_decoration.jpg'
+import danceFloor from '../../Assets/images/dance floor.jpeg'
 
+// Enhanced SliderData with proper categories and metadata
 export const SliderData = [
+  // Catering Images (11 images)
   {
-    image:catering_1,
+    image: catering_1,
+    title: "Premium Catering Setup",
+    category: "catering",
+    description: "Elegant catering arrangement for special occasions"
   },
   {
-    image:catering_2,
+    image: catering_2,
+    title: "Traditional Indian Cuisine",
+    category: "catering",
+    description: "Authentic Indian dishes prepared with care"
   },
   {
-    image:catering_3,
+    image: catering_3,
+    title: "Wedding Feast Preparation",
+    category: "catering",
+    description: "Large-scale wedding catering services"
   },
   {
-    image:catering_4,
+    image: catering_4,
+    title: "Corporate Event Catering",
+    category: "catering",
+    description: "Professional catering for business events"
   },
   {
-    image:catering_5,
+    image: catering_5,
+    title: "Birthday Party Catering",
+    category: "catering",
+    description: "Delicious food for birthday celebrations"
   },
   {
-    image:catering_6,
+    image: catering_6,
+    title: "Anniversary Catering",
+    category: "catering",
+    description: "Special meals for anniversary celebrations"
   },
   {
-    image:catering_7,
+    image: catering_7,
+    title: "Festival Catering",
+    category: "catering",
+    description: "Traditional festival food preparation"
   },
   {
-    image:catering_8,
+    image: catering_8,
+    title: "Outdoor Event Catering",
+    category: "catering",
+    description: "Catering services for outdoor events"
   },
   {
-    image:catering_9,
+    image: catering_9,
+    title: "Luxury Catering Service",
+    category: "catering",
+    description: "Premium catering for luxury events"
   },
   {
-    image:catering_10,
+    image: catering_10,
+    title: "Hero Catering Setup",
+    category: "catering",
+    description: "Main catering arrangement showcase"
   },
   {
-    image:catering_11,
-  },
-  {
-    image:stageDeco,
-  },
-  {
-    image:stageDeco_1,
-  },
-  {
-    image:stageDeco_2,
-  },
-  {
-    image:stageDeco_3,
-  },
-  {
-    image:stageDeco_4,
-  },
-  {
-    image:stageDeco_5,
-  },
-  {
-    image:lightDeco,
-  },
-  {
-    image:lightDeco_1,
-  },
-  {
-    image:lightDeco_2,
-  },
-  {
-    image:lightDeco_3,
-  },
-  {
-    image:lightDeco_4,
-  },
-  {
-    image:tent_1,
+    image: catering_11,
+    title: "Modern Catering Display",
+    category: "catering",
+    description: "Contemporary catering presentation"
   },
   
+  // Stage Decoration Images (6 images)
+  {
+    image: stageDeco,
+    title: "Main Stage Design",
+    category: "stage",
+    description: "Elegant main stage decoration"
+  },
+  {
+    image: stageDeco_1,
+    title: "Wedding Stage Setup",
+    category: "stage",
+    description: "Beautiful wedding stage decoration"
+  },
+  {
+    image: stageDeco_2,
+    title: "Corporate Stage Design",
+    category: "stage",
+    description: "Professional corporate stage setup"
+  },
+  {
+    image: stageDeco_3,
+    title: "Birthday Stage Decoration",
+    category: "stage",
+    description: "Colorful birthday stage design"
+  },
+  {
+    image: stageDeco_4,
+    title: "Festival Stage Setup",
+    category: "stage",
+    description: "Traditional festival stage decoration"
+  },
+  {
+    image: stageDeco_5,
+    title: "Event Stage Design",
+    category: "stage",
+    description: "Versatile event stage decoration"
+  },
+  
+  // Light Decoration Images (5 images)
+  {
+    image: lightDeco,
+    title: "Main Light Display",
+    category: "lighting",
+    description: "Spectacular main lighting arrangement"
+  },
+  {
+    image: lightDeco_1,
+    title: "LED Light Setup",
+    category: "lighting",
+    description: "Modern LED lighting design"
+  },
+  {
+    image: lightDeco_2,
+    title: "Colorful Light Display",
+    category: "lighting",
+    description: "Vibrant colorful lighting effects"
+  },
+  {
+    image: lightDeco_3,
+    title: "Ambient Lighting",
+    category: "lighting",
+    description: "Soft ambient lighting for events"
+  },
+  {
+    image: lightDeco_4,
+    title: "Dramatic Light Effects",
+    category: "lighting",
+    description: "Dramatic lighting for special moments"
+  },
+  
+  // Tent Decoration Images (1 image)
+  {
+    image: tent_1,
+    title: "Elegant Tent Setup",
+    category: "tent",
+    description: "Beautiful tent decoration for outdoor events"
+  },
+  
+  // Flower Decoration Images (1 image)
+  {
+    image: flowerDeco,
+    title: "Floral Arrangements",
+    category: "decoration",
+    description: "Beautiful flower decorations for events"
+  },
+  
+  // Dance Floor Images (1 image)
+  {
+    image: danceFloor,
+    title: "Dance Floor Setup",
+    category: "dancefloor",
+    description: "Professional dance floor with lighting"
+  }
 ];
 
+// Category-specific image exports for service pages
 export const CateringImages = [
   {
     original: catering_1,
@@ -142,6 +237,13 @@ export const CateringImages = [
   }
 ]
 
+export const TentDecoImages = [
+  {
+    original: tent_1,
+    thumbnail: tent_1
+  }
+]
+
 export const LightDecoImages = [ 
   {
     original: lightDeco,
@@ -164,9 +266,60 @@ export const LightDecoImages = [
     thumbnail: lightDeco_4
   }
 ]
-export const TentDecoImages = [
+
+export const StageDecoImages = [
   {
-    original: tent_1,
-    thumbnail: tent_1
+    original: stageDeco,
+    thumbnail: stageDeco
+  },
+  {
+    original: stageDeco_1,
+    thumbnail: stageDeco_1
+  },
+  {
+    original: stageDeco_2,
+    thumbnail: stageDeco_2
+  },
+  {
+    original: stageDeco_3,
+    thumbnail: stageDeco_3
+  },
+  {
+    original: stageDeco_4,
+    thumbnail: stageDeco_4
+  },
+  {
+    original: stageDeco_5,
+    thumbnail: stageDeco_5
+  }
+]
+
+export const FlowerDecoImages = [
+  {
+    original: flowerDeco,
+    thumbnail: flowerDeco
+  }
+]
+
+export const DanceFloorImages = [
+  {
+    original: danceFloor,
+    thumbnail: danceFloor
+  }
+]
+
+// New category for sound and dance floor
+export const SoundDanceFloorImages = [
+  {
+    original: danceFloor,
+    thumbnail: danceFloor
+  },
+  {
+    original: lightDeco,
+    thumbnail: lightDeco
+  },
+  {
+    original: lightDeco_1,
+    thumbnail: lightDeco_1
   }
 ]

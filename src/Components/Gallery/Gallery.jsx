@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { SliderData } from './SliderData';
 import './gallery.css'
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+import { FaArrowCircleRight, FaArrowCircleLeft } from 'react-icons/fa';
 
 const Gallery = () => {
 
@@ -23,8 +23,8 @@ const Gallery = () => {
   return (
     <section className='slider'>
       <h1>Gallery <hr /></h1>
-      <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
-      <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
+      <FaArrowCircleLeft className='left-arrow' onClick={prevSlide} />
+      <FaArrowCircleRight className='right-arrow' onClick={nextSlide} />
       {SliderData.map((slide, index) => {
         return (
           <div
