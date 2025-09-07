@@ -1,21 +1,24 @@
 import React from 'react';
 import './catering.css';
-import { FaArrowLeft, FaHome, FaTimes } from 'react-icons/fa';
+import { FaArrowLeft, FaHome,} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-
+import { Helmet } from 'react-helmet-async';
 const Catering = ({ title, data }) => {
   return (
     <div className="catering-page">
-      {/* Floating Close Button */}
-      <Link to="/" className="floating-close-btn" title="Close and return to home">
-        <FaTimes />
-      </Link>
+      <Helmet>
+        <title>{title} | CNS Event</title>
+        <meta 
+          name="description" 
+          content={`CNS Event offers the best ${title} services in Rajasthan. Explore our premium event management and decoration services.`} 
+        />
+      </Helmet>
       
       {/* Header */}
       <div className="catering-header">
         <div className="header-content">
           <div className="back-navigation">
-            <Link to="/#Services" className="back-btn">
+            <Link to="/Services" className="back-btn">
               <FaArrowLeft />
               <span>Back to Services</span>
             </Link>

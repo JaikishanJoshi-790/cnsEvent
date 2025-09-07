@@ -26,21 +26,20 @@
   align-items: center;
   justify-content: space-between;
 }
-
 .navbar-logo {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
   text-decoration: none;
 }
 
 .navbar-logo img {
-  width: 45px;
-  height: 45px;
-  object-fit: contain;
+  width: 50px;       /* fixed size rakho */
+  height: 50px;
+  object-fit: cover; /* image distort na ho */
   border-radius: 50%;
   border: 2px solid var(--secondary-color);
-  padding: 5px;
+  padding: 0 0 2px 0;
   background: var(--text-light);
 }
 
@@ -53,6 +52,11 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.navbar-logo img:hover {
+  transform: rotate(-8deg) scale(1.05);
+  transition: all 0.3s ease;
 }
 
 .navbar-menu {

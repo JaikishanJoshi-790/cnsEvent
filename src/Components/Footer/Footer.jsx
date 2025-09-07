@@ -188,8 +188,8 @@ const Footer = () => {
               </li>
               <li>
                 <FaMapMarkerAlt />
-                <span>सरस डेयरी, चुंगी चौकी, डीडवाना (341303)</span>
-                <span> Near Bus stand Cholukhan , Didwana</span>
+                <span>श्री दोजराज गणेश मंदिर रोड़, अग्रवाल भवन के सामने, डीडवाना</span>
+
                 </li>
             </ul>
 

@@ -152,7 +152,7 @@ const Contact = () => {
             </h2>
             <h2>
               <FaRegAddressBook />
-              सरस डेयरी, चुंगी चौकी, डीडवाना (341303)
+              श्री दोजराज गणेश मंदिर रोड़, अग्रवाल भवन के सामने, डीडवाना
             </h2>
             <h2>
               <IoLocationSharp />
@@ -293,7 +293,7 @@ const Contact = () => {
               <IoLocationSharp />
             </div>
             <h3>Service Area</h3>
-            <p>Covering Didwana and surrounding areas within 50km radius</p>
+            <p>Covering Didwana and surrounding areas within 180km radius</p>
           </div>
         </div>
       </div>

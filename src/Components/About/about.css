@@ -1,11 +1,12 @@
 .about-page {
   background: var(--bg-light);
+  overflow: hidden;
 }
 
 /* About Hero */
 .about-hero {
   background: var(--gradient-dark);
-  min-height: 60vh;
+  min-height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,16 +16,7 @@
   overflow: hidden;
 }
 
-.about-hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="about-pattern" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="1" fill="%23d4af37" opacity="0.1"/><circle cx="80" cy="80" r="1" fill="%23d4af37" opacity="0.1"/><circle cx="40" cy="60" r="0.5" fill="%23d4af37" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23about-pattern)"/></svg>');
-  opacity: 0.3;
-}
+
 
 .about-hero-content {
   position: relative;
@@ -104,22 +96,14 @@
   color: var(--text-gray);
 }
 
-.story-image {
-  text-align: center;
+.story-image img{
+  align-items: center;
+  height: auto;
+  width: auto;
+  overflow: hidden;
 }
 
-.image-placeholder {
-  width: 100%;
-  height: 400px;
-  background: var(--gradient-primary);
-  border-radius: var(--border-radius);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-light);
-  font-size: 1.2rem;
-  font-weight: 600;
-}
+
 
 /* Mission & Vision */
 .mission-vision {
@@ -421,4 +405,34 @@
   .values-grid {
     grid-template-columns: 1fr;
   }
+}
+/* Founder / Story Section Image */
+.story-image img {
+  width: 100%;
+  max-width: fit-content; /* founder wali image limit ho jaye */
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light);
+  object-fit: cover;
+}
+
+/* Team Member Images */
+.member-image {
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* image crop ho kar fit hogi */
+  border-bottom: 3px solid var(--primary-color); /* thoda design feel */
+  transition: transform 0.4s ease;
+}
+
+.team-member:hover .member-image img {
+  transform: scale(1.05); /* hover par halka zoom effect */
 }

@@ -1,0 +1,11 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Block sensitive/private files
+Disallow: /admin
+Disallow: /login
+
+# Sitemap location (important for SEO)
+Sitemap: https://cnsevent.in/sitemap.xml
+

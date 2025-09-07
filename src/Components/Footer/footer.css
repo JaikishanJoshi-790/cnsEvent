@@ -70,16 +70,23 @@
 .footer-logo {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 5px;
   margin-bottom: 20px;
 }
 
+.footer-logo img:hover {
+  transform: rotate(-8deg) scale(1.05);
+  transition: all 0.3s ease;
+}
+
+
 .footer-logo img {
-  width: 50px;
+    width: 50px;       /* fixed size rakho */
   height: 50px;
+  object-fit: cover; /* image distort na ho */
   border-radius: 50%;
   border: 2px solid var(--secondary-color);
-  padding: 5px;
+  padding: 0 0 2px 0;
   background: var(--text-light);
 }
 

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './galleryPage.css';
 import { FaFilter, FaTimes, FaSearch, FaDownload, FaShare, FaImages, FaStar, FaAward } from 'react-icons/fa';
 import { SliderData } from './SliderData';
-
+import { Helmet } from 'react-helmet-async';
 const GalleryPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
@@ -63,32 +63,23 @@ const GalleryPage = () => {
 
   return (
     <div className="gallery-page">
+      <Helmet>
+        <title>Gallery | CNS Event</title>
+        <meta 
+          name="description" 
+          content="Explore the gallery of CNS Event - Catering, Decoration, Stage, Lighting, Sound & Dance Floor arrangements for weddings and events." 
+        />
+        <meta name="keywords" content="CNS Event Gallery, Wedding Gallery, Catering Photos, Decoration Photos, Rajasthan Events" />
+      </Helmet>
       {/* Professional Hero Section */}
       <div className="gallery-hero">
         <div className="hero-background">
           <div className="hero-overlay"></div>
         </div>
         <div className="hero-content">
-          <div className="hero-badge">
-            <FaImages />
-            <span>Portfolio</span>
-          </div>
-          <h1>Our Gallery</h1>
+          
+          <h1>Pictures</h1>
           <p>Explore our stunning work and creative designs that bring events to life</p>
-          <div className="hero-stats">
-            <div className="stat-item">
-              <span className="stat-number">{SliderData.length}+</span>
-              <span className="stat-label">Images</span>
-            </div>
-            <div className="stat-item">
-              <span className="stat-number">{categories.length - 1}</span>
-              <span className="stat-label">Categories</span>
-            </div>
-            <div className="stat-item">
-              <span className="stat-number">100%</span>
-              <span className="stat-label">Quality</span>
-            </div>
-          </div>
         </div>
       </div>
 

@@ -2,10 +2,18 @@ import React from 'react';
 import './contactPage.css';
 import Contact from './Contact';
 import { IoIosContact, FaPhone, FaMapMarkerAlt, FaEnvelope, FaClock } from 'react-icons/fa';
-
+import { Helmet } from 'react-helmet-async';
 const ContactPage = () => {
   return (
     <div className="contact-page">
+      <Helmet>
+        <title>Contact Us | CNS Event</title>
+        <meta 
+          name="description" 
+          content="Get in touch with CNS Event for the best catering, decoration, and event management services in Rajasthan." 
+        />
+        <meta name="keywords" content="CNS Event Contact, Event Booking, Catering Contact, Rajasthan Event Management" />
+      </Helmet>
       {/* Hero Section */}
       <div className="contact-hero">
         <div className="contact-hero-content">
@@ -41,7 +49,7 @@ const ContactPage = () => {
                 <FaMapMarkerAlt />
               </div>
               <h3>Visit Us</h3>
-              <p>सरस डेयरी, चुंगी चौकी, डीडवाना (341303)</p>
+              <p>श्री दोजराज गणेश मंदिर रोड़, अग्रवाल भवन के सामने, डीडवाना</p>
               <span>Rajasthan, India</span>
             </div>
             

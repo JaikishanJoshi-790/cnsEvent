@@ -5,7 +5,7 @@
 /* Professional Hero Section */
 .gallery-hero {
   background: var(--gradient-dark);
-  min-height: 70vh;
+  min-height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,7 +72,7 @@
 
 .gallery-hero p {
   font-size: 1.3rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--secondary-color);
   font-weight: 400;
   margin-bottom: 40px;
   line-height: 1.6;
@@ -367,8 +367,8 @@
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 50px;
   margin-bottom: 60px;
 }
 

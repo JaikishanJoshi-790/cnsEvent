@@ -2,10 +2,16 @@ import React from 'react';
 import "./hero.css"
 import heroBG from "../../Assets/images/catering_hero_image.jpg"
 import { Link } from 'react-scroll';
+import { Helmet } from 'react-helmet-async';
 
 const Hero = () => {
   return (
     <div className='hero-main-container'>
+       <Helmet>
+        <title>CNS Event - Best Event Management Company</title>
+        <meta name="description" content="CNS Event provides wedding, birthday, and corporate event management services with premium decoration and planning." />
+        <meta name="keywords" content="Event planner, Wedding planner, Birthday party decoration, Corporate events" />
+      </Helmet>
       {/* Background Image */}
       <div className="hero-image-container">
         <img src={heroBG} alt="CNS Events Hero Background" />
@@ -32,7 +38,7 @@ const Hero = () => {
       
       {/* Main Content */}
       <div className="hero-text-container">
-        <p className="gradient-text">Jai Shree Ram</p>
+        <p className="gradient-text">WELCOME TO</p>
         <h1>CNS Events</h1>
         <h4>Creating Unforgettable Moments, One Event at a Time</h4>
         

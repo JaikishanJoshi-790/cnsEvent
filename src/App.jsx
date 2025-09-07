@@ -15,11 +15,21 @@ import All from './all';
 import About from './Components/About/About';
 import GalleryPage from './Components/Gallery/GalleryPage';
 import ContactPage from './Components/Contact/ContactPage';
-
+import { Helmet } from 'react-helmet-async';
+import ScrollToTop from './Components/scrollToTop';
+import Services from './Components/Services/Services';
 const App = () => {
   return (
     <>
+    <Helmet>
+        <title>CNS Event | Rajasthan's Best Event Management</title>
+        <meta 
+          name="description" 
+          content="CNS Event - Complete solution for weddings, catering, decoration, and event planning in Rajasthan." 
+        />
+      </Helmet>
       <BrowserRouter>
+      <ScrollToTop/>
       <Routes>
         <Route path='/' element={
           <Layout showBreadcrumb={false}>
@@ -39,6 +49,11 @@ const App = () => {
         <Route path='/contact' element={
           <Layout showBreadcrumb={false}>
             <ContactPage/>
+          </Layout>
+        }/>
+        <Route path='/services' element={
+          <Layout showBreadcrumb={false}>
+            <Services/>
           </Layout>
         }/>
         <Route path='/catering' element={

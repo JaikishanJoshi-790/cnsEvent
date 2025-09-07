@@ -3,7 +3,7 @@ import "./navbar.css";
 import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom";
 import logo from "../../Assets/icon/logo.png";
-import { IoHome } from "react-icons/io5";
+import { IoAccessibility, IoHome } from "react-icons/io5";
 import { GrGallery } from "react-icons/gr";
 import { MdRestaurantMenu } from "react-icons/md";
 import { FaChevronDown } from "react-icons/fa";
@@ -66,46 +66,14 @@ const Navbar = () => {
             <span>About</span>
           </NavLink>
           
-          {/* Services Dropdown */}
-          <div 
-            className={`navbar-dropdown ${isServicesOpen ? 'active' : ''}`}
-            onMouseEnter={() => setIsServicesOpen(true)}
-            onMouseLeave={() => setIsServicesOpen(false)}
+         <NavLink 
+            to="/services"
+            onClick={closeMobileMenu}
+            className="navbar-menu-items"
           >
-            <button 
-              className="navbar-menu-items dropdown-trigger"
-              onClick={() => setIsServicesOpen(!isServicesOpen)}
-            >
-              <MdRestaurantMenu />
-              <span>Services</span>
-              <FaChevronDown className={`dropdown-arrow ${isServicesOpen ? 'rotated' : ''}`} />
-            </button>
-            
-            <div className="dropdown-menu">
-              <Link to="Services" smooth className="dropdown-item" onClick={closeMobileMenu}>
-                <span>View All Services</span>
-              </Link>
-              <div className="dropdown-divider"></div>
-              <NavLink to="/catering" onClick={closeMobileMenu} className="dropdown-item">
-                <span>Catering Service</span>
-              </NavLink>
-              <NavLink to="/tentdeco" onClick={closeMobileMenu} className="dropdown-item">
-                <span>Tent Decoration</span>
-              </NavLink>
-              <NavLink to="/sandf" onClick={closeMobileMenu} className="dropdown-item">
-                <span>Sound & Dance Floor</span>
-              </NavLink>
-              <NavLink to="/flowerdeco" onClick={closeMobileMenu} className="dropdown-item">
-                <span>Flower Decoration</span>
-              </NavLink>
-              <NavLink to="/stagedeco" onClick={closeMobileMenu} className="dropdown-item">
-                <span>Stage Decoration</span>
-              </NavLink>
-              <NavLink to="/lightdeco" onClick={closeMobileMenu} className="dropdown-item">
-                <span>Light Decoration</span>
-              </NavLink>
-            </div>
-          </div>
+            <IoAccessibility />
+            <span>Services</span>
+          </NavLink>
           
           <NavLink 
             to="/gallery"

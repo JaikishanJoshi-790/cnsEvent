@@ -2,6 +2,11 @@ import React, { useEffect } from 'react';
 import './about.css';
 import { IoIosContact, FaPhone, FaMapMarkerAlt, FaAward, FaUsers, FaCalendarAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
+import founderImage from "../../Assets/images/founder.webp"
+import founderImageForStory from '../../Assets/images/FounderMain.webp'
+import creativeTeamImage from '../../Assets/images/CreativeTeam.webp'
+import cateringTeam from '../../Assets/images/cateringTeam.webp'
 
 const About = () => {
   useEffect(() => {
@@ -24,39 +29,47 @@ const About = () => {
 
   const achievements = [
     { icon: <FaAward />, number: "500+", label: "Events Completed" },
-    { icon: <FaUsers />, number: "50+", label: "Happy Clients" },
-    { icon: <FaCalendarAlt />, number: "5+", label: "Years Experience" },
+    { icon: <FaUsers />, number: "400+", label: "Happy Clients" },
+    { icon: <FaCalendarAlt />, number: "7+", label: "Years Experience" },
     { icon: <FaPhone />, number: "24/7", label: "Support Available" }
   ];
 
   const teamMembers = [
-    {
-      name: "Anil Sharma",
-      position: "Founder & CEO",
-      description: "Leading CNS Events with over 5 years of experience in event management",
-      image: "/path-to-image.jpg"
-    },
-    {
-      name: "Creative Team",
-      position: "Design & Decoration",
-      description: "Expert designers creating magical atmospheres for every event",
-      image: "/path-to-image.jpg"
-    },
-    {
-      name: "Catering Team",
-      position: "Food & Service",
-      description: "Professional chefs and staff ensuring exceptional dining experiences",
-      image: "/path-to-image.jpg"
-    }
-  ];
+  {
+    name: "Anil Sharma",
+    position: "Founder & CEO",
+    description: "Leading CNS Events with over 7 years of experience in event management",
+    image: founderImage
+  },
+  {
+    name: "Creative Team",
+    position: "Design & Decoration",
+    description: "Expert designers creating magical atmospheres for every event",
+    image: creativeTeamImage
+  },
+  {
+    name: "Team",
+position: "Management & Staff",
+description: "Dedicated professionals working with passion, integrity, and care to create unforgettable experiences.",
+image: cateringTeam
+
+  }
+];
 
   return (
     <div className="about-page">
+      <Helmet>
+  <title>About Us | CNS Event</title>
+  <meta 
+    name="description" 
+    content="Learn more about CNS Event - your trusted partner for weddings, parties, and corporate events." 
+  />
+</Helmet>
       {/* Hero Section */}
       <div className="about-hero">
         <div className="about-hero-content">
           <h1>About CNS Events</h1>
-          <p>Creating Unforgettable Moments Since 2019</p>
+          <p>Creating Unforgettable Moments Since 2018</p>
         </div>
       </div>
 
@@ -67,7 +80,7 @@ const About = () => {
             <div className="story-text">
               <h2>Our Story</h2>
               <p>
-                CNS Events was founded in 2019 with a simple yet powerful vision: to transform ordinary 
+                CNS Events was founded in 2018 with a simple yet powerful vision: to transform ordinary 
                 gatherings into extraordinary celebrations. What started as a small team of passionate 
                 event enthusiasts has grown into one of Didwana's most trusted event management companies.
               </p>
@@ -78,8 +91,8 @@ const About = () => {
               </p>
             </div>
             <div className="story-image">
-              <div className="image-placeholder">
-                <span>Company Story Image</span>
+              <div className=''>
+               <img src={founderImageForStory} alt='Founder Imag' />
               </div>
             </div>
           </div>
@@ -127,26 +140,25 @@ const About = () => {
 
       {/* Team */}
       <section className="about-section team">
-        <div className="container">
-          <h2>Our Team</h2>
-          <div className="team-grid">
-            {teamMembers.map((member, index) => (
-              <div key={index} className="team-member">
-                <div className="member-image">
-                  <div className="image-placeholder">
-                    <span>Team Member</span>
-                  </div>
-                </div>
-                <div className="member-info">
-                  <h3>{member.name}</h3>
-                  <p className="position">{member.position}</p>
-                  <p className="description">{member.description}</p>
-                </div>
-              </div>
-            ))}
+  <div className="container">
+    <h2>Our Team</h2>
+    <div className="team-grid">
+      {teamMembers.map((member, index) => (
+        <div key={index} className="team-member">
+          <div className="member-image">
+            <img src={member.image} alt={member.name} />
+          </div>
+          <div className="member-info">
+            <h3>{member.name}</h3>
+            <p className="position">{member.position}</p>
+            <p className="description">{member.description}</p>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Values */}
       <section className="about-section values">

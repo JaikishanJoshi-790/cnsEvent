@@ -9,20 +9,69 @@ import catering_8 from '../../Assets/images/catering_8.jpeg'
 import catering_9 from '../../Assets/images/catering_9.jpg'
 import catering_10 from '../../Assets/images/catering_hero_image.jpg'
 import catering_11 from '../../Assets/images/cattering-1.avif'
+
 import lightDeco from '../../Assets/images/lightDecoration.jpg'
 import lightDeco_1 from '../../Assets/images/lightDecoration_1.webp'
 import lightDeco_2 from '../../Assets/images/lightDecoration_2.webp'
 import lightDeco_3 from '../../Assets/images/lightDecoration_3.jpg'
 import lightDeco_4 from '../../Assets/images/lightDecoration_4.jpg'
-import tent_1 from '../../Assets/images/tent_1.jpeg'
+
 import stageDeco from '../../Assets/images/stage_decoration.jpg'
 import stageDeco_1 from '../../Assets/images/stage_decoration_1.jpg'
 import stageDeco_2 from '../../Assets/images/stage_decoration_3.jpg'
 import stageDeco_3 from '../../Assets/images/stage_decoration_4.jpg'
 import stageDeco_4 from '../../Assets/images/stage_decoration_5.jpg'
 import stageDeco_5 from '../../Assets/images/stage_decoration_6.jpg'
+import stageDeco_6 from '../../Assets/images/stage.webp'
+import stageDeco_7 from '../../Assets/images/stage2.webp'
+import stageDeco_8 from '../../Assets/images/stage3.webp'
+import stageDeco_9 from '../../Assets/images/stage4.webp'
+import stageDeco_10 from '../../Assets/images/stage5.webp'
+import stageDeco_11 from '../../Assets/images/stage6.webp'
+import stageDeco_12 from '../../Assets/images/stage7.webp'
+import stageDeco_13 from '../../Assets/images/stage8.webp'
+import stageDeco_14 from '../../Assets/images/stage9.webp'
+import stageDeco_15 from '../../Assets/images/stage10.webp'
+import stageDeco_16 from '../../Assets/images/stage11.webp'
+
 import flowerDeco from '../../Assets/images/flower_decoration.jpg'
+
+
 import danceFloor from '../../Assets/images/dance floor.jpeg'
+import soundfloor1 from '../../Assets/images/Sound1.webp'
+import soundfloor2 from '../../Assets/images/sound2.webp'
+import soundfloor3 from '../../Assets/images/sound3.webp'
+
+import tent_1 from '../../Assets/images/tent_1.jpeg'
+import tent2 from '../../Assets/images/tent2.webp'
+import tent3 from '../../Assets/images/tent3.webp'
+import tent4 from '../../Assets/images/tent4.webp'
+import tent5 from '../../Assets/images/tent5.webp'
+import tent6 from '../../Assets/images/tent6.webp'
+import tent7 from '../../Assets/images/tent7.webp'
+import tent8 from '../../Assets/images/tent8.webp'
+import tent9 from '../../Assets/images/tent9.webp'
+import tent10 from '../../Assets/images/tent10.webp'
+import tent11 from '../../Assets/images/tent11.webp'
+import tent12 from '../../Assets/images/tent12.webp'
+import tent13 from '../../Assets/images/tent13.webp'
+import tent14 from '../../Assets/images/tent14.webp'
+import tent15 from '../../Assets/images/tent15.webp'
+import tent16 from '../../Assets/images/tent16.webp'
+import tent17 from '../../Assets/images/tent17.webp'
+import tent18 from '../../Assets/images/tent18.webp'
+import tent19 from '../../Assets/images/tent19.webp'
+import tent20 from '../../Assets/images/tent20.webp'
+import tent21 from '../../Assets/images/tent21.webp'
+import tent22 from '../../Assets/images/tent22.webp'
+import tent23 from '../../Assets/images/tent23.webp'
+import tent24 from '../../Assets/images/tent24.webp'
+import tent25 from '../../Assets/images/tent25.webp'
+import tent26 from '../../Assets/images/tent26.webp'
+import tent27 from '../../Assets/images/tent27.webp'
+import tent28 from '../../Assets/images/tent28.webp'
+import tent29 from '../../Assets/images/tent29.webp'
+
 
 // Enhanced SliderData with proper categories and metadata
 export const SliderData = [
@@ -131,6 +180,72 @@ export const SliderData = [
     category: "stage",
     description: "Versatile event stage decoration"
   },
+  {
+    image: stageDeco_6,
+    title: "Event Stage Design",
+    category: "stage",
+    description: "Versatile event stage decoration"
+  },
+  {
+    image: stageDeco_7,
+    title: "Event Stage Design",
+    category: "stage",
+    description: "Versatile event stage decoration"
+  },
+  {
+    image: stageDeco_8,
+    title: "Event Stage Design",
+    category: "stage",
+    description: "Versatile event stage decoration"
+  },
+  {
+    image: stageDeco_9,
+    title: "Event Stage Design",
+    category: "stage",
+    description: "Versatile event stage decoration"
+  },
+  {
+    image: stageDeco_10,
+    title: "Event Stage Design",
+    category: "stage",
+    description: "Versatile event stage decoration"
+  },
+  {
+    image: stageDeco_11,
+    title: "Event Stage Design",
+    category: "stage",
+    description: "Versatile event stage decoration"
+  },
+  {
+    image: stageDeco_12,
+    title: "Event Stage Design",
+    category: "stage",
+    description: "Versatile event stage decoration"
+  },
+  {
+    image: stageDeco_13,
+    title: "Event Stage Design",
+    category: "stage",
+    description: "Versatile event stage decoration"
+  },
+  {
+    image: stageDeco_14,
+    title: "Event Stage Design",
+    category: "stage",
+    description: "Versatile event stage decoration"
+  },
+  {
+    image: stageDeco_15,
+    title: "Event Stage Design",
+    category: "stage",
+    description: "Versatile event stage decoration"
+  },
+  {
+    image: stageDeco_16,
+    title: "Event Stage Design",
+    category: "stage",
+    description: "Versatile event stage decoration"
+  },
   
   // Light Decoration Images (5 images)
   {
@@ -171,6 +286,174 @@ export const SliderData = [
     category: "tent",
     description: "Beautiful tent decoration for outdoor events"
   },
+    {
+    image: tent2,
+    title: "Elegant Tent Setup",
+    category: "tent",
+    description: "Beautiful tent decoration for outdoor events"
+  },
+  {
+    image: tent3,
+    title: "Elegant Tent Setup",
+    category: "tent",
+    description: "Beautiful tent decoration for outdoor events"
+  },
+  {
+    image: tent4,
+    title: "Elegant Tent Setup",
+    category: "tent",
+    description: "Beautiful tent decoration for outdoor events"
+  },
+  {
+    image: tent5,
+    title: "Elegant Tent Setup",
+    category: "tent",
+    description: "Beautiful tent decoration for outdoor events"
+  },
+  {
+    image: tent6,
+    title: "Elegant Tent Setup",
+    category: "tent",
+    description: "Beautiful tent decoration for outdoor events"
+  },
+  {
+    image: tent7,
+    title: "Elegant Tent Setup",
+    category: "tent",
+    description: "Beautiful tent decoration for outdoor events"
+  },
+  {
+    image: tent8,
+    title: "Elegant Tent Setup",
+    category: "tent",
+    description: "Beautiful tent decoration for outdoor events"
+  },
+  {
+    image: tent9,
+    title: "Elegant Tent Setup",
+    category: "tent",
+    description: "Beautiful tent decoration for outdoor events"
+  },
+  {
+    image: tent10,
+    title: "Elegant Tent Setup",
+    category: "tent",
+    description: "Beautiful tent decoration for outdoor events"
+  },
+  {
+    image: tent11,
+    title: "Elegant Tent Setup",
+    category: "tent",
+    description: "Beautiful tent decoration for outdoor events"
+  },
+  {
+    image: tent12,
+    title: "Elegant Tent Setup",
+    category: "tent",
+    description: "Beautiful tent decoration for outdoor events"
+  },
+  {
+    image: tent13,
+    title: "Elegant Tent Setup",
+    category: "tent",
+    description: "Beautiful tent decoration for outdoor events"
+  },
+  {
+    image: tent14,
+    title: "Elegant Tent Setup",
+    category: "tent",
+    description: "Beautiful tent decoration for outdoor events"
+  },
+  {
+    image: tent15,
+    title: "Elegant Tent Setup",
+    category: "tent",
+    description: "Beautiful tent decoration for outdoor events"
+  },
+  {
+    image: tent16,
+    title: "Elegant Tent Setup",
+    category: "tent",
+    description: "Beautiful tent decoration for outdoor events"
+  },
+  {
+    image: tent17,
+    title: "Elegant Tent Setup",
+    category: "tent",
+    description: "Beautiful tent decoration for outdoor events"
+  },
+  {
+    image: tent18,
+    title: "Elegant Tent Setup",
+    category: "tent",
+    description: "Beautiful tent decoration for outdoor events"
+  },
+  {
+    image: tent19,
+    title: "Elegant Tent Setup",
+    category: "tent",
+    description: "Beautiful tent decoration for outdoor events"
+  },
+  {
+    image: tent20,
+    title: "Elegant Tent Setup",
+    category: "tent",
+    description: "Beautiful tent decoration for outdoor events"
+  },
+  {
+    image: tent21,
+    title: "Elegant Tent Setup",
+    category: "tent",
+    description: "Beautiful tent decoration for outdoor events"
+  },
+  {
+    image: tent22,
+    title: "Elegant Tent Setup",
+    category: "tent",
+    description: "Beautiful tent decoration for outdoor events"
+  },
+  {
+    image: tent23,
+    title: "Elegant Tent Setup",
+    category: "tent",
+    description: "Beautiful tent decoration for outdoor events"
+  },
+  {
+    image: tent24,
+    title: "Elegant Tent Setup",
+    category: "tent",
+    description: "Beautiful tent decoration for outdoor events"
+  },
+  {
+    image: tent25,
+    title: "Elegant Tent Setup",
+    category: "tent",
+    description: "Beautiful tent decoration for outdoor events"
+  },
+  {
+    image: tent26,
+    title: "Elegant Tent Setup",
+    category: "tent",
+    description: "Beautiful tent decoration for outdoor events"
+  },
+  {
+    image: tent27,
+    title: "Elegant Tent Setup",
+    category: "tent",
+    description: "Beautiful tent decoration for outdoor events"
+  },
+  {
+    image: tent28,
+    title: "Elegant Tent Setup",
+    category: "tent",
+    description: "Beautiful tent decoration for outdoor events"
+  },
+  {
+    image: tent29,
+    title: "Elegant Tent Setup",
+    category: "tent",
+    description: "Beautiful tent decoration for outdoor events"
+  },
   
   // Flower Decoration Images (1 image)
   {
@@ -183,6 +466,24 @@ export const SliderData = [
   // Dance Floor Images (1 image)
   {
     image: danceFloor,
+    title: "Dance Floor Setup",
+    category: "dancefloor",
+    description: "Professional dance floor with lighting"
+  },
+  {
+    image: soundfloor1,
+    title: "Dance Floor Setup",
+    category: "dancefloor",
+    description: "Professional dance floor with lighting"
+  },
+  {
+    image: soundfloor2,
+    title: "Dance Floor Setup",
+    category: "dancefloor",
+    description: "Professional dance floor with lighting"
+  },
+  {
+    image: soundfloor3,
     title: "Dance Floor Setup",
     category: "dancefloor",
     description: "Professional dance floor with lighting"
